@@ -1,0 +1,229 @@
+header {
+    background-color: black;
+    margin: 0;
+    color: white;
+    padding: 1.5em;
+    margin-bottom: 2em;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0;
+}
+
+#main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2em;
+}
+
+#left {
+    flex: 3;
+}
+
+#left >* ,#right >*  {
+    margin-bottom: 2em;
+}
+
+#right {
+    flex: 2;
+}
+
+#profileCard {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.blue {
+    background-color: #17a2b8;
+}
+
+.grey {
+    color: #686868;
+}
+
+#headerLinks {
+    display: flex;
+    align-items: center;
+}
+
+.headerLink {
+    text-decoration: none;
+    margin: 1rem;
+    font-size: 1.25rem;
+}
+
+.headerLink:visited {
+    color: white;
+}
+
+#textProfile {
+    font-size: 2.5rem;
+}
+
+.signOut {
+    height: 2rem;
+    width: 7rem;
+    border: #17a2b8;
+    color: white;
+    font-size: 1rem;
+}
+
+.borderGrey {
+    border: 5px solid #ccc;
+}
+
+img {
+    border-radius: 50%;
+}
+
+#profileHeader {
+    height: 8em;
+}
+
+#profilePicture {
+    margin-top: -5em;
+    width: 8em;
+    border: 10px solid white;
+    box-shadow: 1px 2px 3px 3px #ccc;
+}
+
+#profileContents {
+    margin-left: 2em;
+}
+
+#mapMarker {
+    height: .75em;
+}
+
+#gear {
+    height: .9em;
+}
+
+#location {
+    font-size: 2em;
+    margin-top: .2em;
+}
+
+#qualifications {
+    display: flex;
+    padding-left: 0em;
+    margin-bottom: 0;
+}
+
+#qualifications li {
+    list-style-type: none;
+    margin-right: .5em;
+    margin-left: 0;
+}
+
+#qualifications li:before {
+    content: " | ";
+}
+
+#qualifications li:first-child:before {
+    content: " ";
+}
+
+#userBio, #qualifications, #editProfile {
+    font-size: 1.5em;
+}
+
+#userBio {
+    margin-top: 0;
+}
+
+#editProfile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+#editProfile a {
+    margin-left: .5em;
+}
+
+.titleBar {
+    background-color: #333333;
+    color: white;
+    font-size: 1.5em;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.card div, .card h1 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.dates {
+    font-size: 1.2em;
+    margin-top: .2em;
+    margin-bottom: .5em;
+}
+
+#education .description {
+    font-size: 1.2em;
+}
+
+.titleBar span {
+    border-radius: 50%;
+    background-color: #ccc;
+    color: black;
+    padding-left: .3em;
+    padding-right: .3em;
+}
+
+.contacts {
+    list-style-type: none;
+    font-size: 1.5em;
+    margin-left: -.4em;
+}
+
+.contacts li img {
+    height: 1.5em;
+    text-align: center;
+    margin-right: .7em;
+}
+
+.contacts li {
+    display: flex;
+    align-items: center;
+    padding-bottom: .5em;
+}
+
+.acceptClose img {
+    margin: 0;
+}
+
+#connectionRequests .contacts li {
+    justify-content: space-between;
+}
+
+.contacts li div {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+}
+
+.viewMore {
+    font-size: 1.5em;
+    padding-bottom: .5em;
+    margin: 0;
+    padding-top: .5em;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}

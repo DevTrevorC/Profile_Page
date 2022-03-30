@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container flex">
+        <div class="headerLeft flex">
+          <h1 id="textProfile">Profile</h1>
+        </div>
+        <div id="headerRight" class="flex">
+          <div id="headerLinks">
+            <a href="#" class="headerLink">Home</a>
+            <a href="#" class="headerLink">My Profile</a>
+            <a href="#" class="headerLink">Find Connections</a>
+          </div>
+          <button class="signOut blue">Sign Out</button>
+        </div>
+      </div>
+    </header>
+    <div id="main" class="container">
+      <div id="left">
+        <div id="profileCard" class="borderGrey">
+          <div id="profileHeader" class="blue"></div>
+          <div id="profileContents">
+            <img
+              id="profilePicture"
+              src="images\jane-m.jpg"
+              alt="User's profile picture!"
+            />
+            <h1 id="mainUsername">Jane Doe</h1>
+            <div id="location">
+              <img id="mapMarker" src="icons\map-marker.png" alt="Map marker" />
+              Seattle
+            </div>
+            <ul id="qualifications">
+              <li>Developer</li>
+              <li>Engineer</li>
+              <li>Problem Solver</li>
+            </ul>
+            <p id="userBio">Master of shadows and the internet!</p>
+            <div id="editProfile">
+              <img id="gear" src="icons\gear.png" alt="Edit profile icon" />
+              <a href="#" onclick="changeName()">edit profile</a>
+            </div>
+          </div>
+        </div>
+        <div id="education" class="card borderGrey">
+          <div class="titleBar">Education</div>
+          <h1>Coding Dojo - Full Stack Bootcamp</h1>
+          <div class="grey dates">Dec 2019 - Mar 2020</div>
+          <div class="description">
+            Triple black belt in Python, MERN, and C#...
+          </div>
+        </div>
+      </div>
+      <div id="right">
+        <div id="connectionRequests" class="card borderGrey">
+          <div class="titleBar"><span id="requestCount">2</span> Connection Requests</div>
+          <ul class="contacts">
+            <li>
+              <div>
+                <span><img src="images\todd-s.jpg" /></span>
+                <span> Todd E</span>
+              </div>
+              <div class="acceptClose">
+                <img onclick="addConnection(this)" src="icons\accept-circle.png" alt="accept" />
+                <img onclick="removeRequest(this)" src="icons\close-circle.png" alt="close" />
+              </div>
+            </li>
+            <li>
+              <div>
+                <span><img src="images\phil-s.jpg" /></span>
+                <span> Phil K</span>
+              </div>
+              <div class="acceptClose">
+                <img onclick="addConnection(this)" src="icons\accept-circle.png" alt="accept" />
+                <img onclick="removeRequest(this)" src="icons\close-circle.png" alt="close" />
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="yourConnections" class="card borderGrey">
+          <div class="titleBar"><span id="connectionCount">500</span> Your Connections</div>
+          <ul class="contacts">
+            <li>
+              <span><img src="images\adrien-s.jpg" /></span>
+              <span> Adrien D</span>
+            </li>
+            <li>
+              <span><img src="images\anne-s.jpg" /></span> <span> Anne J</span>
+            </li>
+            <li>
+              <span><img src="images\alayne-s.jpg" /></span>
+              <span> Alayne T</span>
+            </li>
+            <li>
+              <span><img src="images\arry-s.jpg" /></span> <span> Arry Y</span>
+            </li>
+          </ul>
+          <div class="viewMore borderGrey">
+            <a href="#">View More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
